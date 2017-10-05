@@ -24,3 +24,12 @@ val playVersion = "2.6.3"
 
 libraryDependencies += "com.typesafe.play" % "play_2.12" % playVersion
 libraryDependencies += "com.google.inject" % "guice" % "4.1.0"
+
+// Add sonatype repository settings
+publishTo := Some(
+  if (isSnapshot.value)
+    Opts.resolver.sonatypeSnapshots
+  else
+    Opts.resolver.sonatypeStaging
+)
+

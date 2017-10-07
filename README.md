@@ -50,7 +50,6 @@ As you can see, this have removed all the noise from logs that are not related t
 # Usage
 
 ## Add Dependency
-At this time, the plugin is not released to any repository, so you need to clone the project and run `sbt publishLocal` command to get the dependency installed locally.
 
 Add this line to your `build.sbt`:
 - `libraryDependencies += "com.alexitc" %% "play-request-tracer" % "0.1.0"`
